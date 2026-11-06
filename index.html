@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đặng Đình Quyền Anh</title>
+<meta name="description" content="Đặng Đình Quyền Anh, người sáng lập Học viện Phong thái Aris. Đào tạo tác phong và nghi thức giao tiếp cho doanh nhân, lãnh đạo.">
+<meta property="og:title" content="Đặng Đình Quyền Anh">
+<meta property="og:description" content="Người sáng lập Học viện Phong thái Aris.">
+<meta property="og:image" content="assets/card.webp">
+<meta name="theme-color" content="#f4eee3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='3' fill='%23a3322a'/><text x='16' y='21.5' font-size='13' text-anchor='middle' fill='%23f3e9da' font-family='serif'>QA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E6%99%BA&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400&text=%E3%80%82%E4%B8%8D%E4%B8%94%E4%B9%8B%E4%B9%9F%E4%BA%BA%E5%8A%9B%E5%8B%9D%E5%A1%B5%E5%B1%85%E5%BC%B7%E6%98%8E%E6%98%AF%E6%99%BA%E6%9C%89%E6%A8%82%E7%82%BA%E7%9F%A5%E7%B7%A3%E8%80%85%E8%87%AA%E9%81%93%E9%9A%A8%EF%BC%8C&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+:root{
+  --paper:#f4eee3; --paper-2:#ebe1d1; --paper-3:#e3d6c1;
+  --walnut:#1e1611; --walnut-soft:#5c4f40; --cognac:#7a4a22; --champagne:#c2a275; --cinnabar:#a3322a;
+  --sc-canvas:var(--paper); --sc-surface:var(--paper-2);
+  --sc-ink:var(--walnut); --sc-ink-soft:var(--walnut-soft);
+  --sc-accent:var(--cognac); --sc-accent-ink:var(--paper);
+  --sc-font-display:"Noto Serif Display", Georgia, serif;
+  --sc-font-text:"Be Vietnam Pro", system-ui, sans-serif;
+  --hairline:rgba(30,22,17,.14);
+}
+html,body{background:var(--paper)}
+body{color:var(--walnut);font:300 var(--sc-t-base)/1.7 var(--sc-font-text)}
+:focus-visible{outline:1px solid var(--cognac);outline-offset:4px}
+a{color:inherit}
+.kicker{display:block;font:500 var(--sc-t-xs)/1 var(--sc-font-text);letter-spacing:.32em;text-transform:uppercase;color:var(--cognac);margin-bottom:1.6rem}
+.sec{padding:clamp(5rem,12vw,11rem) var(--sc-gutter)}
+.wrap{max-width:76rem;margin:0 auto}
+h2.big{margin:0;font:300 var(--sc-t-3xl)/1.04 var(--sc-font-display);letter-spacing:-.03em;text-wrap:balance}
+h2.big em{font-style:italic;color:var(--cognac)}
+
+/* ---------- menu ---------- */
+.menu-btn{position:fixed;top:1rem;right:var(--sc-gutter);z-index:var(--sc-z-chrome);font:400 var(--sc-t-sm)/1 var(--sc-font-text);letter-spacing:.08em;padding:.75rem 1.15rem;border-radius:999px;border:1px solid var(--hairline);background:rgba(244,238,227,.78);backdrop-filter:blur(10px);color:var(--walnut);cursor:pointer}
+.menu{position:fixed;inset:0;z-index:calc(var(--sc-z-chrome) - 1);background:rgba(244,238,227,.97);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity var(--sc-d-slow) var(--sc-ease-out),visibility 0s linear var(--sc-d-slow)}
+.menu.open{opacity:1;visibility:visible;transition:opacity var(--sc-d-slow) var(--sc-ease-out)}
+.menu ol{list-style:none;margin:0;padding:0;counter-reset:m}
+.menu li{counter-increment:m}
+.menu a{display:flex;gap:1.4rem;align-items:baseline;text-decoration:none;font:300 clamp(2rem,5vw,3.6rem)/1.25 var(--sc-font-display);letter-spacing:-.02em;padding:.2rem 0}
+.menu a::before{content:counter(m,upper-roman);font:400 var(--sc-t-sm)/1 var(--sc-font-text);color:var(--cognac);width:2rem;letter-spacing:.1em}
+.menu a:hover{color:var(--cognac)}
+
+/* ---------- 1 · HERO: the portrait develops on paper ---------- */
+.hero [data-sc-stage]{overflow:hidden;background:var(--paper)}
+.h{position:absolute;inset:0;pointer-events:none;will-change:transform}
+.h--plate{inset:-5%}
+.h--plate img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:.55;filter:saturate(.7)}
+.h--plate::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,rgba(244,238,227,.85) 38%,rgba(244,238,227,.15) 70%,rgba(244,238,227,.35) 100%)}
+.h--glyph{display:flex;justify-content:flex-end;align-items:center;padding-right:clamp(0rem,6vw,8rem)}
+.h--glyph span{font:400 min(78vh,62vw)/1 "Ma Shan Zheng",serif;color:rgba(194,162,117,.42);translate:0 -2%}
+.h--man{display:flex;justify-content:flex-end;align-items:flex-end;padding-right:clamp(0rem,10vw,13rem);transform-origin:70% 100%}
+.h--man img{height:min(98vh,1080px);width:auto;-webkit-mask-image:radial-gradient(circle at 50% 18%,#000 var(--r,12%),transparent calc(var(--r,12%) + 16%));mask-image:radial-gradient(circle at 50% 18%,#000 var(--r,12%),transparent calc(var(--r,12%) + 16%));filter:grayscale(var(--g,1)) drop-shadow(-20px 30px 40px rgba(60,40,20,.18))}
+.h--leak{background:radial-gradient(40% 50% at 100% 0%,rgba(255,244,224,.85),transparent 70%),radial-gradient(30% 30% at 0% 100%,rgba(194,162,117,.18),transparent 70%)}
+.h-copy{position:absolute;left:var(--sc-gutter);bottom:clamp(2.5rem,10vh,7rem);z-index:var(--sc-z-copy);max-width:min(36rem,48vw)}
+.h-copy .kicker{margin-bottom:1.2rem}
+.h-copy h1{margin:0;font:300 clamp(3.2rem,6.6vw,7rem)/.98 var(--sc-font-display);letter-spacing:-.035em;color:var(--walnut)}
+.h-copy h1 span{display:block}
+.h-copy p{margin:1.6rem 0 0;max-width:26rem;font-size:var(--sc-t-lg);line-height:1.55;color:var(--walnut-soft)}
+
+/* ---------- 2 · about ---------- */
+.about .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(2.5rem,7vw,8rem);align-items:start}
+.about .text p{margin:0;max-width:34rem;font-size:var(--sc-t-lg);line-height:1.75;color:var(--walnut-soft)}
+.about .text p:first-of-type{font:300 var(--sc-t-xl)/1.45 var(--sc-font-display);color:var(--walnut);letter-spacing:-.01em}
+.about .text p + p{margin-top:1.4rem}
+.about figure{margin:0;position:sticky;top:12vh}
+.about .ph{aspect-ratio:3/4;overflow:hidden}
+.about .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 14%;display:block}
+.about figcaption{margin-top:.8rem;font:italic 300 var(--sc-t-sm)/1.4 var(--sc-font-display);color:var(--walnut-soft)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin-top:3.5rem;padding-top:2rem;border-top:1px solid var(--hairline);max-width:40rem}
+.facts dt{font:500 var(--sc-t-xs)/1.3 var(--sc-font-text);letter-spacing:.2em;text-transform:uppercase;color:var(--cognac);margin-bottom:.5rem}
+.facts dd{margin:0;font:300 var(--sc-t-base)/1.5 var(--sc-font-display);color:var(--walnut)}
+
+/* ---------- 3 · mission: words come into ink ---------- */
+.mission{background:var(--paper-2)}
+.mission blockquote{margin:0 auto;max-width:68rem;font:300 clamp(2.2rem,5vw,5.2rem)/1.14 var(--sc-font-display);letter-spacing:-.025em;text-wrap:balance}
+.mission .w{color:rgba(30,22,17,.13);transition:color .5s var(--sc-ease-out)}
+.mission .w.lit{color:var(--walnut)}
+.mission .w.key.lit{color:var(--cognac);font-style:italic}
+.mission figcaption{max-width:68rem;margin:2.2rem auto 0}
+
+/* ---------- 4 · self-inquiry (pinned) ---------- */
+.ask [data-sc-stage]{background:var(--paper-3);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;gap:clamp(1.5rem,5vw,6rem);padding:0 var(--sc-gutter)}
+.ask__side .kicker{margin-bottom:1rem}
+.ask__side p{margin:0;max-width:22rem;color:var(--walnut-soft);font-size:var(--sc-t-lg);line-height:1.6}
+.ask__stage{position:relative;aspect-ratio:1;width:min(40rem,48vw);justify-self:center}
+.ask__stage svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.q{position:absolute;inset:14%;display:flex;align-items:center;justify-content:center;text-align:center;margin:0;font:300 clamp(1.7rem,3.2vw,3rem)/1.22 var(--sc-font-display);letter-spacing:-.02em;color:var(--walnut);text-wrap:balance}
+.q em{font-style:italic;color:var(--cognac)}
+
+/* ---------- 5 · the library (pan, originals turn into Vietnamese) ---------- */
+.lib [data-sc-stage]{display:flex;align-items:center;background:var(--paper)}
+.rail{gap:clamp(1.25rem,2.5vw,2.5rem);padding-inline:var(--sc-gutter);align-items:stretch}
+.rail > *{flex:0 0 auto}
+.rail__lead{width:clamp(18rem,28vw,27rem);align-self:center}
+.rail__lead p{margin:1.2rem 0 0;color:var(--walnut-soft);font-size:var(--sc-t-lg);line-height:1.6;max-width:24rem}
+.plate{position:relative;width:clamp(19rem,32vw,30rem);min-height:min(66vh,34rem);padding:clamp(1.6rem,3vw,2.6rem);background:#fbf7f0;border:1px solid var(--hairline);display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 30px 60px -40px rgba(60,40,20,.35)}
+.plate::before{content:"";position:absolute;inset:.55rem;border:1px solid rgba(194,162,117,.4);pointer-events:none}
+.plate__text{position:relative;flex:1;display:grid;align-items:center;margin:1rem 0}
+.orig,.vi{grid-area:1/1}
+.orig{font:300 clamp(1.7rem,2.8vw,2.6rem)/1.45 "Noto Serif TC","Noto Serif Display",serif;color:var(--walnut);letter-spacing:.06em}
+.orig.lat{font-family:var(--sc-font-display);font-style:italic;letter-spacing:0;font-size:clamp(1.5rem,2.4vw,2.2rem);line-height:1.3}
+.vi{font:300 clamp(1.5rem,2.3vw,2.15rem)/1.35 var(--sc-font-display);letter-spacing:-.01em;color:var(--walnut);opacity:0}
+.plate cite{font:500 var(--sc-t-xs)/1.5 var(--sc-font-text);letter-spacing:.18em;text-transform:uppercase;color:var(--cognac);font-style:normal}
+.plate .tag{font:italic 300 var(--sc-t-sm)/1 var(--sc-font-display);color:var(--walnut-soft)}
+.rail__end{width:clamp(16rem,22vw,20rem);align-self:center;font:italic 300 var(--sc-t-xl)/1.35 var(--sc-font-display);color:var(--walnut-soft)}
+
+/* ---------- 6 · work ---------- */
+.work .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(2.5rem,6vw,7rem)}
+.work figure{margin:0}
+.work .ph{aspect-ratio:4/5;overflow:hidden}
+.work .ph img{width:100%;height:100%;object-fit:cover;object-position:40% 20%;display:block}
+.list{margin:0;padding:0;list-style:none;border-top:1px solid var(--hairline)}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:1.5rem;padding:1.8rem 0;border-bottom:1px solid var(--hairline)}
+.list h3{margin:0;font:400 var(--sc-t-xl)/1.15 var(--sc-font-display);letter-spacing:-.01em}
+.list p{margin:0;color:var(--walnut-soft);line-height:1.65}
+
+/* ---------- 7 · contact ---------- */
+.contact [data-sc-stage]{display:grid;place-items:center;background:var(--paper-2);padding:1.5rem}
+.card{position:relative;width:min(56rem,100%);background:#fbf7f0;border:1px solid var(--hairline);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);box-shadow:0 50px 90px -50px rgba(60,40,20,.45)}
+.card::before{content:"";position:absolute;inset:.7rem;border:1px solid rgba(194,162,117,.45);pointer-events:none}
+.card__l{padding:clamp(2rem,4.5vw,3.6rem);border-right:1px solid var(--hairline)}
+.card__l h2{margin:0 0 1rem;font:300 var(--sc-t-2xl)/1.05 var(--sc-font-display);letter-spacing:-.025em}
+.card__l p{margin:0;color:var(--walnut-soft);line-height:1.7;max-width:22rem}
+.topics{margin:1.6rem 0 0;padding:0;list-style:none}
+.topics li{padding:.55rem 0;border-top:1px solid var(--hairline);font:300 var(--sc-t-base)/1.4 var(--sc-font-display)}
+.card__r{padding:clamp(2rem,4.5vw,3.6rem);position:relative;display:flex;flex-direction:column}
+.rows{margin:0}
+.rows div{padding:.9rem 0;border-bottom:1px solid var(--hairline)}
+.rows dt{font:500 var(--sc-t-xs)/1 var(--sc-font-text);letter-spacing:.24em;text-transform:uppercase;color:var(--cognac);margin-bottom:.45rem}
+.rows dd{margin:0;font:300 var(--sc-t-lg)/1.3 var(--sc-font-display)}
+.rows dd a{text-decoration:none}
+.rows dd .tbd{color:var(--walnut-soft);font-style:italic}
+.card__act{margin-top:auto;padding-top:1.8rem;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem}
+.card__act button.link{background:none;border:0;padding:.4rem 0;font:inherit;font-size:var(--sc-t-sm);color:var(--cognac);text-decoration:underline;text-underline-offset:.3em;cursor:pointer;text-align:left}
+.seal{width:clamp(5rem,9vw,6.6rem);aspect-ratio:1;border:0;padding:0;background:none;cursor:pointer;position:relative;flex:0 0 auto}
+.seal svg{width:100%;height:100%;display:block}
+.seal span{position:absolute;left:50%;top:100%;translate:-50% .4rem;white-space:nowrap;font:500 .6rem/1 var(--sc-font-text);letter-spacing:.2em;text-transform:uppercase;color:var(--cognac)}
+.colophon{position:absolute;bottom:.9rem;left:0;right:0;text-align:center;margin:0;font-size:var(--sc-t-xs);color:#8a7b68}
+
+/* ---------- phone ---------- */
+@media (max-width:820px){
+  .menu-btn{padding:.6rem .95rem;font-size:var(--sc-t-xs)}
+  .h--plate::after{background:linear-gradient(180deg,var(--paper) 0%,rgba(244,238,227,.7) 38%,rgba(244,238,227,.2) 70%)}
+  .h--glyph{justify-content:center;align-items:flex-end;padding:0 0 18svh}
+  .h--glyph span{font-size:78vw}
+  .h--man{justify-content:center;padding-right:0;transform-origin:50% 100%}
+  .h--man img{height:60svh}
+  .h-copy{top:4.6rem;bottom:auto;left:1.25rem;right:1.25rem;max-width:none}
+  .h-copy h1{font-size:clamp(2.5rem,11vw,3.4rem)}
+  .h-copy p{font-size:var(--sc-t-sm);margin-top:.9rem;max-width:19rem}
+  .about .wrap,.work .wrap{grid-template-columns:1fr}
+  .about figure{position:static}
+  .facts{grid-template-columns:1fr;gap:1rem}
+  .ask [data-sc-stage]{grid-template-columns:1fr;align-content:center;gap:1rem;padding-top:3.5rem}
+  .ask__side p{display:none}
+  .ask__stage{width:min(22rem,86vw)}
+  .q{inset:10%;font-size:clamp(1.3rem,6vw,1.8rem)}
+  .plate{width:80vw;min-height:58svh}
+  .rail__lead{width:80vw}.rail__end{width:70vw}
+  .list li{grid-template-columns:1fr;gap:.4rem}
+  .card{grid-template-columns:1fr}
+  .card__l{border-right:0;border-bottom:1px solid var(--hairline);padding-bottom:1.6rem}
+  .topics{display:none}
+  .contact [data-sc-stage]{align-items:center;padding:4rem 1rem 3rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .h{transform:none!important}
+  .h--man img{-webkit-mask-image:none;mask-image:none;filter:none}
+  .mission .w{color:var(--walnut)}
+  .vi{opacity:1!important}.orig{display:none}
+  .ask__stage path{stroke-dashoffset:0!important}
+  .seal{opacity:1!important;transform:none!important;filter:none!important}
+}
+</style>
+</head>
+<body>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Mục lục</button>
+<nav class="menu" id="menu" aria-label="Mục lục">
+  <ol>
+    <li><a href="#gioi-thieu">Giới thiệu</a></li>
+    <li><a href="#su-menh">Sứ mệnh</a></li>
+    <li><a href="#tu-van">Tự vấn</a></li>
+    <li><a href="#thu-vien">Lời người xưa</a></li>
+    <li><a href="#cong-viec">Công việc</a></li>
+    <li><a href="#lien-he">Liên hệ</a></li>
+  </ol>
+</nav>
+
+<main id="top">
+
+  <!-- 1 · HERO -->
+  <section class="hero" id="hero" data-sc-act="pin" data-sc-span="2" data-sc-drift="#f4eee3">
+    <div data-sc-stage>
+      <div class="h h--plate" data-h="plate"><img src="assets/hero-plate.webp" alt=""></div>
+      <div class="h h--glyph" data-h="glyph" aria-hidden="true"><span>智</span></div>
+      <div class="h h--man" data-h="man"><img id="heroMan" src="assets/hero-subject.webp" alt="Đặng Đình Quyền Anh mặc vest xám than hàng khuy đôi, hai tay đan trước người" width="1140" height="2000" fetchpriority="high"></div>
+      <div class="h h--leak" data-h="leak" aria-hidden="true"></div>
+      <div class="h-copy">
+        <span class="kicker">Người sáng lập Học viện Phong thái Aris</span>
+        <h1><span>Đặng Đình</span><span>Quyền Anh</span></h1>
+        <p>Đào tạo tác phong và nghi thức giao tiếp cho doanh nhân, lãnh đạo và đội ngũ doanh nghiệp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · ABOUT -->
+  <section class="sec about" id="gioi-thieu" data-sc-act="flow">
+    <div class="wrap">
+      <div class="text" data-sc-in data-sc-stagger="90">
+        <span class="kicker">Giới thiệu</span>
+        <p>Quyền Anh sáng lập Học viện Phong thái Aris và trực tiếp đứng lớp. Học viên của anh là doanh nhân, lãnh đạo cấp cao và đội ngũ của các doanh nghiệp.</p>
+        <p>Anh từng cộng tác với Đài truyền hình HTV, Đại học Kinh tế Tài chính UEF và Đại học Công nghệ Thông tin UIT với vai trò chuyên gia về phong thái.</p>
+        <p>Điều anh theo đuổi lâu dài là trí tuệ và đạo đức, hai thứ anh xem là nền móng của một người đàn ông bản lĩnh.</p>
+        <dl class="facts">
+          <div><dt>Lĩnh vực</dt><dd>Phong thái, nghi thức giao tiếp</dd></div>
+          <div><dt>Học viện</dt><dd>Phong thái Aris</dd></div>
+          <div><dt>Kênh</dt><dd>Quyền Anh Be A Man</dd></div>
+        </dl>
+      </div>
+      <figure data-sc-in>
+        <div class="ph"><img src="assets/about.webp" alt="Quyền Anh trong vest xám than, một tay cài khuy áo" width="1199" height="2000" loading="lazy"></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 · MISSION -->
+  <section class="sec mission" id="su-menh" data-sc-act="flow">
+    <figure style="margin:0">
+      <span class="kicker" style="max-width:68rem;margin-inline:auto">Sứ mệnh</span>
+      <blockquote id="mission">Nâng tầm phong thái Việt. Giúp đàn ông Việt Nam trở thành những <span class="key">quý ông,</span> đứng vững trên <span class="key">trí tuệ</span> và <span class="key">đạo đức.</span></blockquote>
+    </figure>
+  </section>
+
+  <!-- 4 · SELF-INQUIRY -->
+  <section class="ask" id="tu-van" data-sc-act="pin" data-sc-span="3.8">
+    <div data-sc-stage>
+      <div class="ask__side">
+        <span class="kicker">Tự vấn</span>
+        <h2 class="big">Trước một quyết định lớn, <em>hỏi mình bốn câu.</em></h2>
+      </div>
+      <div class="ask__stage">
+        <svg viewBox="0 0 300 300" aria-hidden="true">
+          <defs><filter id="brush" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency="0.035 0.6" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter></defs>
+          <g filter="url(#brush)" fill="none" stroke-linecap="round">
+            <path id="ensoA" d="M182 48 C128 26 58 52 42 116 C26 180 74 252 150 256 C226 260 268 198 262 132 C258 90 232 60 200 50" stroke="#7a4a22" stroke-width="13" opacity=".8"/>
+            <path id="ensoB" d="M186 54 C132 34 66 58 50 118 C35 178 80 246 150 249 C220 252 260 196 255 134 C251 96 228 66 204 58" stroke="#c2a275" stroke-width="4" opacity=".7"/>
+          </g>
+        </svg>
+        <p class="q" data-sc-cue="0 0.26 0"><span>Mình đang phản ứng, hay đang <em>lựa chọn?</em></span></p>
+        <p class="q" data-sc-cue="0.24 0.5"><span>Điều mình tin là do mình kiểm chứng, hay chỉ vì <em>nghe nhiều lần?</em></span></p>
+        <p class="q" data-sc-cue="0.48 0.74"><span>Nếu không ai biết, mình có còn <em>làm như vậy</em> không?</span></p>
+        <p class="q" data-sc-cue="0.72 1"><span>Mình muốn thắng cuộc tranh luận này, hay muốn <em>hiểu cho đúng?</em></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · LIBRARY -->
+  <section class="lib" id="thu-vien" data-sc-act="pan" data-sc-span="4.6">
+    <div data-sc-stage>
+      <div class="rail" data-sc-pan="0.03" id="rail">
+        <div class="rail__lead">
+          <span class="kicker">Lời người xưa</span>
+          <h2 class="big">Năm câu nói về <em>sự hiểu biết.</em></h2>
+          <p>Từ Trung Hoa, La Mã và Đại Việt. Mỗi câu hiện bằng nguyên văn trước, rồi mới sang tiếng Việt.</p>
+        </div>
+        <article class="plate"><span class="tag">i.</span>
+          <div class="plate__text"><span class="orig" lang="zh-Hant">知人者智，自知者明。</span><span class="vi">Biết người là trí, biết mình là sáng.</span></div>
+          <cite>Lão Tử · Đạo Đức Kinh, chương 33</cite></article>
+        <article class="plate"><span class="tag">ii.</span>
+          <div class="plate__text"><span class="orig" lang="zh-Hant">勝人者有力，自勝者強。</span><span class="vi">Thắng người là có sức, thắng mình mới là mạnh.</span></div>
+          <cite>Lão Tử · Đạo Đức Kinh, chương 33</cite></article>
+        <article class="plate"><span class="tag">iii.</span>
+          <div class="plate__text"><span class="orig" lang="zh-Hant">知之為知之，不知為不知，是知也。</span><span class="vi">Biết thì nói là biết, không biết thì nói là không biết. Như thế mới thật là biết.</span></div>
+          <cite>Khổng Tử · Luận Ngữ, thiên Vi Chính</cite></article>
+        <article class="plate"><span class="tag">iv.</span>
+          <div class="plate__text"><span class="orig lat" lang="la">Ignoranti quem portum petat, nullus suus ventus est.</span><span class="vi">Người không biết mình đang hướng về bến nào thì chẳng có ngọn gió nào là thuận.</span></div>
+          <cite>Seneca · Thư gửi Lucilius, số 71</cite></article>
+        <article class="plate"><span class="tag">v.</span>
+          <div class="plate__text"><span class="orig" lang="zh-Hant">居塵樂道且隨緣</span><span class="vi">Sống giữa cõi đời mà vui với đạo, mọi sự cứ tùy duyên.</span></div>
+          <cite>Trần Nhân Tông · Cư trần lạc đạo</cite></article>
+        <p class="rail__end">Bản dịch tiếng Việt mang tính tham khảo, dựa trên các bản dịch phổ biến.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · WORK -->
+  <section class="sec work" id="cong-viec" data-sc-act="flow">
+    <div class="wrap">
+      <figure data-sc-reveal="up" data-sc-reveal-at="0.05 0.45">
+        <div class="ph"><img src="assets/card.webp" alt="Quyền Anh trong vest xanh kẻ sọc tại sảnh đá cẩm thạch" width="941" height="941" loading="lazy"></div>
+      </figure>
+      <div>
+        <span class="kicker">Công việc</span>
+        <ul class="list" data-sc-in data-sc-stagger="70">
+          <li><h3>Đào tạo doanh nghiệp</h3><p>Tác phong kinh doanh, nghi thức giao tiếp và nghi thức bàn tiệc Âu cho lãnh đạo và đội ngũ.</p></li>
+          <li><h3>Học viện Phong thái Aris</h3><p>Các chương trình rèn phong thái cho người đi làm, có lớp trực tuyến và lớp trực tiếp.</p></li>
+          <li><h3>Chuyên gia khách mời</h3><p>Đã cộng tác cùng Đài truyền hình HTV, Đại học UEF và Đại học UIT.</p></li>
+          <li><h3>Quyền Anh Be A Man</h3><p>Kênh chia sẻ về phong thái và tư duy của người đàn ông, trên TikTok, Facebook, YouTube, Instagram, Threads và Zalo Video.</p></li>
+          <li><h3>Học viện bóng rổ Baby Shark</h3><p>Lớp bóng rổ dành cho trẻ em.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · CONTACT -->
+  <section class="contact" id="lien-he" data-sc-act="pin" data-sc-span="1.7">
+    <div data-sc-stage>
+      <div class="card">
+        <div class="card__l">
+          <span class="kicker">Hợp tác</span>
+          <h2>Liên hệ công việc</h2>
+          <p>Dành cho doanh nghiệp, đơn vị tổ chức sự kiện và báo chí. Vui lòng cho biết tên, đơn vị và nội dung cần trao đổi.</p>
+          <ul class="topics">
+            <li>Đào tạo nội bộ cho doanh nghiệp</li>
+            <li>Mời diễn giả, chuyên gia</li>
+            <li>Báo chí và truyền thông</li>
+          </ul>
+        </div>
+        <div class="card__r">
+          <dl class="rows">
+            <div><dt>Email</dt><dd id="cEmail"><span class="tbd">Đang cập nhật</span></dd></div>
+            <div><dt>Điện thoại · Zalo</dt><dd id="cPhone"><span class="tbd">Đang cập nhật</span></dd></div>
+            <div><dt>Học viện</dt><dd><a href="https://aris.com.vn">aris.com.vn</a></dd></div>
+          </dl>
+          <div class="card__act">
+            <div>
+              <button class="link save" type="button">Lưu danh thiếp vào điện thoại</button><br>
+              <button class="link" type="button" id="shareLink">Gửi trang này</button>
+            </div>
+            <button class="seal save" type="button" id="seal" aria-label="Lưu danh thiếp của Đặng Đình Quyền Anh">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <defs><filter id="ink" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" result="d"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.7 1.45" result="speck"/><feComposite in="d" in2="speck" operator="in"/></filter></defs>
+                <g filter="url(#ink)" fill="#a3322a"><path fill-rule="evenodd" d="M6 6h108v108H6z M12 12v96h96V12z"/><rect x="16" y="16" width="88" height="88" rx="2"/></g>
+                <g fill="#f1e6d6" font-family="Noto Serif Display, Georgia, serif" text-anchor="middle"><text x="60" y="56" font-size="22" font-weight="500">Quyền</text><text x="60" y="86" font-size="22" font-weight="500">Anh</text></g>
+              </svg>
+              <span>Danh thiếp</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="colophon">© Đặng Đình Quyền Anh · Thực hiện bởi <a href="https://uydanh.com">Uy Danh</a></p>
+    </div>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script>
+const CONTACT = {
+  name: "Đặng Đình Quyền Anh", first: "Quyền Anh", last: "Đặng Đình",
+  title: "Người sáng lập Học viện Phong thái Aris",
+  url: "https://dangdinhquyenanh.com",
+  phone: "0868 935 468", email: "anhddq@aris.com.vn"
+};
+(function(){
+  const $=s=>document.querySelector(s);
+  if (CONTACT.email) $("#cEmail").innerHTML=`<a href="mailto:${CONTACT.email}">${CONTACT.email}</a>`;
+  if (CONTACT.phone){ const d=CONTACT.phone.replace(/[^\d+]/g,""); $("#cPhone").innerHTML=`<a href="tel:${d}">${CONTACT.phone}</a> · <a href="https://zalo.me/${d.replace("+","")}">Zalo</a>`; }
+  function saveVcard(){
+    const v=["BEGIN:VCARD","VERSION:3.0","N;CHARSET=UTF-8:"+CONTACT.last+";"+CONTACT.first+";;;","FN;CHARSET=UTF-8:"+CONTACT.name,"TITLE;CHARSET=UTF-8:"+CONTACT.title,"URL:"+CONTACT.url];
+    if (CONTACT.phone) v.push("TEL;TYPE=CELL:"+CONTACT.phone.replace(/[^\d+]/g,""));
+    if (CONTACT.email) v.push("EMAIL:"+CONTACT.email);
+    v.push("END:VCARD");
+    const a=Object.assign(document.createElement("a"),{href:URL.createObjectURL(new Blob([v.join("\r\n")+"\r\n"],{type:"text/vcard;charset=utf-8"})),download:"Dang-Dinh-Quyen-Anh.vcf"});
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  document.querySelectorAll(".save").forEach(b=>b.addEventListener("click",saveVcard));
+  const sh=$("#shareLink");
+  sh.addEventListener("click",()=>{ if(navigator.share) navigator.share({title:CONTACT.name,url:CONTACT.url}).catch(()=>{}); else if(navigator.clipboard) navigator.clipboard.writeText(CONTACT.url).then(()=>sh.textContent="Đã chép đường link"); });
+
+  /* menu */
+  const mb=$("#menuBtn"), menu=$("#menu");
+  const setMenu=o=>{ menu.classList.toggle("open",o); mb.setAttribute("aria-expanded",o); mb.textContent=o?"Đóng":"Mục lục"; };
+  mb.addEventListener("click",()=>setMenu(!menu.classList.contains("open")));
+  menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+  addEventListener("keydown",e=>{ if(e.key==="Escape") setMenu(false); });
+
+  /* split mission into words */
+  const mission=$("#mission"), words=[];
+  [...mission.childNodes].forEach(n=>{
+    if(n.nodeType===3){ const f=document.createDocumentFragment(); n.textContent.split(/(\s+)/).forEach(t=>{ if(!t) return; if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return;} const s=document.createElement("span"); s.className="w"; s.textContent=t; f.appendChild(s); words.push(s); }); n.replaceWith(f); }
+    else if(n.nodeType===1){ n.classList.add("w"); words.push(n); }
+  });
+
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches){ words.forEach(w=>w.classList.add("lit")); return; }
+
+  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v)), seg=(p,a,b)=>clamp((p-a)/(b-a),0,1);
+  const easeIO=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+  const P=el=>parseFloat(el.style.getPropertyValue("--sc-p"))||0;
+  const hero=$("#hero"), H={}; hero.querySelectorAll("[data-h]").forEach(e=>H[e.dataset.h]=e);
+  const man=$("#heroMan"), ask=$("#tu-van"), lib=$("#thu-vien"), contact=$("#lien-he"), seal=$("#seal");
+  const A=$("#ensoA"), B=$("#ensoB"), LA=A.getTotalLength(), LB=B.getTotalLength();
+  A.style.strokeDasharray=LA; B.style.strokeDasharray=LB;
+  const plates=[...document.querySelectorAll(".plate")].map(p=>({el:p,o:p.querySelector(".orig"),v:p.querySelector(".vi")}));
+
+  const vis=new Map(); const io=new IntersectionObserver(es=>es.forEach(e=>vis.set(e.target,e.isIntersecting)));
+  [hero,mission,ask,lib,contact].forEach(el=>{ vis.set(el,el===hero); io.observe(el); });
+  let mx=0,sx=0; addEventListener("pointermove",e=>{ if(e.pointerType==="mouse") mx=e.clientX/innerWidth-.5; },{passive:true});
+
+  function frame(){
+    sx+=(mx-sx)*.06;
+    if (vis.get(hero)){
+      const p=easeIO(clamp(P(hero),0,1));
+      const r=14+p*120; man.style.setProperty("--r",r+"%"); man.style.setProperty("--g",String(Math.max(0,1-p*1.6)));
+      H.plate.style.transform=`translate3d(${-sx*10}px,${-p*24}px,0) scale(${1.02+p*.04})`;
+      H.glyph.style.transform=`translate3d(${-sx*22}px,${-p*90}px,0) scale(${1-p*.06})`;
+      H.man.style.transform  =`translate3d(${sx*8}px,${p*10}px,0) scale(${1.02-p*.02})`;
+      H.leak.style.transform =`translate3d(${sx*30}px,${-p*120}px,0)`;
+    }
+    if (vis.get(mission)){
+      const r=mission.getBoundingClientRect(), vh=innerHeight, f=clamp((vh*.8-r.top)/(r.height+vh*.1),0,1);
+      const n=Math.round(f*words.length*1.1); words.forEach((w,i)=>w.classList.toggle("lit",i<n));
+    }
+    if (vis.get(ask)){
+      const q=P(ask); A.style.strokeDashoffset=LA*(1-easeIO(seg(q,.02,.9))); B.style.strokeDashoffset=LB*(1-seg(q,.06,.95));
+    }
+    if (vis.get(lib)){
+      const c=innerWidth/2;
+      plates.forEach(pl=>{ const r=pl.el.getBoundingClientRect(); const d=Math.abs(r.left+r.width/2-c)/(innerWidth*.5);
+        const t=clamp(1-(d-.12)/.42,0,1); /* 1 near centre */
+        pl.o.style.opacity=String(1-t); pl.o.style.filter=`blur(${t*6}px)`; pl.o.style.transform=`translateY(${-t*10}px)`;
+        pl.v.style.opacity=String(t); pl.v.style.filter=`blur(${(1-t)*6}px)`; pl.v.style.transform=`translateY(${(1-t)*10}px)`; });
+    }
+    if (vis.get(contact)){
+      const q=P(contact), k=seg(q,.15,.45), land=1-Math.pow(1-k,3);
+      seal.style.opacity=String(seg(q,.12,.22));
+      seal.style.transform=k>=1?"none":`scale(${1.9-.9*land}) rotate(${-9+9*land}deg)`;
+      seal.style.filter=k>=1?"none":`blur(${(1-land)*6}px)`;
+    }
+    requestAnimationFrame(frame);
+  }
+  seal.style.opacity="0";
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
